@@ -1,4 +1,5 @@
 module.exports = {
+    
     sets: {
         desktop: {
             files: 'test/desktop'
@@ -7,6 +8,8 @@ module.exports = {
 
     browsers: {
         chrome: {
+            //screenshotDelay: 500000,
+            baseUrl: 'http://svx.aero',
             desiredCapabilities: {
                 browserName: 'chrome' // this browser should be installed on your OS
             }
@@ -14,8 +17,8 @@ module.exports = {
     },
 
     plugins: {
-            'html-reporter/hermione': { enabled: true, path: 'gemini-reports', defaultView: 'all' },
-            'json-reporter/hermione': { enabled: true, path: 'reports/report.json' }
+        'html-reporter/hermione': { enabled: true, path: 'gemini-reports', defaultView: 'all' },
+        //         'json-reporter/hermione': { enabled: true, path: 'reports/report.json' }
     },
-    
+
 };
