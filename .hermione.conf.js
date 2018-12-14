@@ -1,8 +1,8 @@
 module.exports = {
     
     baseUrl: 'http://svx.aero',
-    waitTimeout: 10000,
-    screenshotDelay: 5000,
+    waitTimeout: 60000,
+    //screenshotDelay: 8000,
     sets: {
         desktop: {
             files: 'test/desktop'

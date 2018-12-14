@@ -1,12 +1,12 @@
 const assert = require('chai').assert;
 
 describe('aero.svx', function() {
-    it('should find RU', function() {
+    it('should find Tablo', function() {
         return this.browser
-            .url('en/')
-            .getText('a.hdr-link.ml-sm-3')
-            .then(function(text) {
-                assert.equal(text, 'RU')
+            .url('/')
+            .getText('.card-content__title')
+            .then(function(title) {
+                assert.equal(title, 'Flight status')
             });
     });
 });
