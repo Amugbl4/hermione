@@ -26,7 +26,7 @@ module.exports = {
             } 
         },
 
-        /*  chrome1440: {
+         chrome1440: {
              compositeImage: true,
              windowSize: '1440x900',
              screenshotsDir: 'screen/chrome/1440',
@@ -52,12 +52,21 @@ module.exports = {
                              pixelRatio: 1.0
                          }
                      },
-                     args: ['--headless']
+                     args: ['--headless'],
+                     userAgent: [
+                        'Mozilla/5.0',
+                        '(iPhone; CPU iPhone OS 10_1_1 like Mac OS X)',
+                        'AppleWebKit/602.2.14',
+                        '(KHTML, like Gecko)',
+                        'Version/10.0',
+                        'Mobile/14B100',
+                        'Safari/602.1'
+                    ].join(' ')
                  }
              }
          },
      
-   */
+  
         ie11fhd: {
             compositeImage: true,
             windowSize: '1920x1080',
