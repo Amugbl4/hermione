@@ -1,0 +1,56 @@
+{
+  "fullscreen pages(not ie) main.chromefhd": {
+    "fullName": "fullscreen pages(not ie) main",
+    "browserId": "chromefhd",
+    "file": "test\\desktop\\test.js",
+    "duration": 7745,
+    "meta": {
+      "pid": 15336,
+      "url": "/",
+      "file": "test\\desktop\\test.js",
+      "sessionId": "9ac9dd2b47f062cd0884de7e6666f7a1"
+    },
+    "url": "/",
+    "status": "fail"
+  },
+  "fullscreen pages(not ie) main.ie11fhd": {
+    "fullName": "fullscreen pages(not ie) main",
+    "browserId": "ie11fhd",
+    "file": "test\\desktop\\test.js",
+    "duration": 10304,
+    "meta": {
+      "pid": 15336,
+      "url": "/",
+      "file": "test\\desktop\\test.js",
+      "sessionId": "2f35b56a-571d-43f9-a5ae-0031af98757e"
+    },
+    "url": "/",
+    "status": "fail"
+  },
+  "fullscreen pages(not ie) parking.chromefhd": {
+    "fullName": "fullscreen pages(not ie) parking",
+    "browserId": "chromefhd",
+    "file": "test\\desktop\\test.js",
+    "duration": 8261,
+    "meta": {
+      "url": "/parking",
+      "file": "test\\desktop\\test.js",
+      "sessionId": "9ac9dd2b47f062cd0884de7e6666f7a1"
+    },
+    "url": "/parking",
+    "status": "fail"
+  },
+  "fullscreen pages(not ie) parking.ie11fhd": {
+    "fullName": "fullscreen pages(not ie) parking",
+    "browserId": "ie11fhd",
+    "file": "test\\desktop\\test.js",
+    "duration": 9910,
+    "meta": {
+      "url": "/parking",
+      "file": "test\\desktop\\test.js",
+      "sessionId": "2f35b56a-571d-43f9-a5ae-0031af98757e"
+    },
+    "url": "/parking",
+    "status": "fail"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "hermione",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".hermione.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "hermione": "^1.0.0",
+    "html-reporter": "^3.0.2",
+    "json-reporter": "^1.0.0"
+  },
+  "devDependencies": {
+    "selenium-standalone": "^6.15.4"
+  },
+  "scripts": {
+    "test": "mocha",
+    "selenium:start": "selenium-standalone start",
+    "start": "npx npm-run-all --parallel selenium:start hermione:gui",
+    "hermione": "node_modules/.bin/hermione",
+    "hermione:gui": "hermione gui",
+    "hermione:gui:single": "hermione gui --set desktop",
+    "start:single": "npx npm-run-all --parallel selenium:start hermione:gui:single"
+  },
+  "author": "Mekerov Dmitry",
+  "license": "ISC"
+}
