@@ -1,6 +1,6 @@
 module.exports = {
     
-    baseUrl: 'http://svx.aero',
+    baseUrl: 'http://kufaero:kufaero@kuf.region.aero/',
     //waitTimeout: 1000,
     screenshotDelay: 1000,
     sets: {
@@ -19,9 +19,9 @@ module.exports = {
             screenshotsDir: 'screen/chrome/1920',
             desiredCapabilities: {
                 browserName: 'chrome',
-                chromeOptions: {
+                /* chromeOptions: {
                     args: ['--headless']
-                }
+                } */
             } 
         },
 
@@ -31,9 +31,9 @@ module.exports = {
              screenshotsDir: 'screen/chrome/1440',
              desiredCapabilities: {
                  browserName: 'chrome',
-                 chromeOptions: {
+                 /* chromeOptions: {
                      args: ['--headless']
-                 }
+                 } */
              }
          },
  
@@ -66,7 +66,7 @@ module.exports = {
          },
      
   
-        ie11_fhd: {
+        /* ie11_fhd: {
             compositeImage: true,
             windowSize: '1920x1080',
             screenshotsDir: 'screen/ie/1920',
@@ -79,7 +79,7 @@ module.exports = {
         },
 
 
-        ie11_fhd: {
+        ie11_1440: {
             compositeImage: true,
             windowSize: '1440x900',
             screenshotsDir: 'screen/ie/1440',
@@ -88,7 +88,7 @@ module.exports = {
                 version: '11',
                 'ie.enableFullPageScreenshot': false
             },
-        },
+        }, */
 
         /* edge: {
             compositeImage: true,

@@ -21,6 +21,12 @@
     "start": "npx npm-run-all --parallel selenium:start hermione:gui",
     "hermione": "node_modules/.bin/hermione",
     "hermione:gui": "hermione gui",
+    "hermione:rov": "hermione gui -c config/.hermione.rov.conf.js",
+    "start:rov": "npx npm-run-all --parallel selenium:start hermione:rov",
+    "hermione:goj": "hermione gui -c config/.hermione.goj.conf.js",
+    "start:goj": "npx npm-run-all --parallel selenium:start hermione:goj",
+    "hermione:kuf": "hermione gui -c config/.hermione.kuf.conf.js",
+    "start:kuf": "npx npm-run-all --parallel selenium:start hermione:kuf",
     "hermione:gui:single": "hermione gui --set desktop",
     "start:single": "npx npm-run-all --parallel selenium:start hermione:gui:single"
   },

@@ -1,6 +1,6 @@
 module.exports = {
     
-    baseUrl: 'http://svx.aero',
+    baseUrl: 'http://rov.aero',
     //waitTimeout: 1000,
     screenshotDelay: 1000,
     sets: {
