@@ -20,7 +20,7 @@ describe('fullscreen pages(not ie)', function () {
     it('food&shopping', function () {
         return this.browser
             .url('/services/food-and-shopping')
-
+            .clickIfAvailable('.i-close.i-close--w.js-cookies-message__close')
             .assertView('plain', '.bx-core')
     });
     
@@ -84,9 +84,10 @@ describe('fullscreen pages(not ie)', function () {
         return this.browser
             .url('/services/luggage/')
             .clickIfAvailable('.i-close.i-close--w.js-cookies-message__close')
-            .click('#heading0 > button')
             .assertView('plain', '.bx-core')
-    });
+            .click('#accordion > div:nth-child(1)')
+            .assertView('open_accord', '.bx-core')
+        });
 
     it('rules', function () {
         return this.browser
@@ -129,6 +130,7 @@ describe('fullscreen pages(not ie)', function () {
             .url('/')
             .clickIfAvailable('.i-close.i-close--w.js-cookies-message__close')
             .click('body > div.wrapper > header > div > div > div > div.header-col.ml-auto.fx-ai-center--xs > span.hdr-link.hdr-link--nav.js-nav-btn')
+            .waitForVisible('body > div.wrapper > header > div > div > div > div.header-col.header-col--first.header-col--opened.js-tab > span.hdr-link.hdr-link-tab.js-tab__btn.hdr-link--b', 2000)
             .click('body > div.wrapper > header > div > div > div > div.header-col.header-col--first.header-col--opened.js-tab > span.hdr-link.hdr-link-tab.js-tab__btn.hdr-link--b')
             .assertView('plain', '.nav')
     });
@@ -145,8 +147,9 @@ describe('fullscreen pages(not ie)', function () {
         return this.browser
             .url('/partners/electro/territory/')
             .clickIfAvailable('.i-close.i-close--w.js-cookies-message__close')
-            .click('#heading0 > button')
             .assertView('plain', '.bx-core')
+            .click('body > div.wrapper > div.page-content > div > div > div:nth-child(3)')
+            .assertView('open_accord', '.bx-core')
     });
 
     it('search', function () {

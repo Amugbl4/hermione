@@ -16,7 +16,7 @@ module.exports = {
         chrome_fhd: {
             compositeImage: true,
             windowSize: '1920x1080',
-            screenshotsDir: 'screen/chrome/1920',
+            screenshotsDir: 'screen/kuf/chrome/1920',
             desiredCapabilities: {
                 browserName: 'chrome',
                 /* chromeOptions: {
@@ -28,7 +28,7 @@ module.exports = {
          chrome_1440: {
              compositeImage: true,
              windowSize: '1440x900',
-             screenshotsDir: 'screen/chrome/1440',
+             screenshotsDir: 'screen/kuf/chrome/1440',
              desiredCapabilities: {
                  browserName: 'chrome',
                  /* chromeOptions: {
@@ -38,7 +38,7 @@ module.exports = {
          },
  
          mobile: {
-             screenshotsDir: 'screen/chrome/mobile',
+             screenshotsDir: 'screen/kuf/chrome/mobile',
              compositeImage: true, 
              desiredCapabilities: {
                  browserName: 'chrome',
@@ -69,7 +69,7 @@ module.exports = {
         /* ie11_fhd: {
             compositeImage: true,
             windowSize: '1920x1080',
-            screenshotsDir: 'screen/ie/1920',
+            screenshotsDir: 'screen/kuf/ie/1920',
             desiredCapabilities: {
                 browserName: 'internet explorer',
                 version: '11',
@@ -82,7 +82,7 @@ module.exports = {
         ie11_1440: {
             compositeImage: true,
             windowSize: '1440x900',
-            screenshotsDir: 'screen/ie/1440',
+            screenshotsDir: 'screen/kuf/ie/1440',
             desiredCapabilities: {
                 browserName: 'internet explorer',
                 version: '11',
@@ -99,7 +99,7 @@ module.exports = {
     },
 
     plugins: {
-        'html-reporter/hermione': { enabled: true, path: 'gemini-reports', defaultView: 'all' },
+        'html-reporter/hermione': { enabled: true, path: 'hermione-reports', defaultView: 'all' },
         'json-reporter/hermione': { enabled: true, path: 'reports/report.json' }
     },
 
@@ -109,11 +109,9 @@ module.exports = {
             var _this = this;
         
             return this.element(selector).then(function (elem) {
-                /**
-                 * check if element was found and throw error if not
-                 */
+                
                 if (!elem.value) {
-                    // throw new _ErrorHandler.RuntimeError(7);
+                    
                     return false;
                 }
         
